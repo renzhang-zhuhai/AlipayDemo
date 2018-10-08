@@ -36,6 +36,7 @@
 	//获取支付宝POST过来反馈信息
     //obtain the response message from Alipay servers by the way of POST .
 	Map<String,String> params = new HashMap<String,String>();
+	@SuppressWarnings("rawtypes") 
 	Map requestParams = request.getParameterMap();
 	for (Iterator iter = requestParams.keySet().iterator(); iter.hasNext();) {
 		String name = (String) iter.next();
